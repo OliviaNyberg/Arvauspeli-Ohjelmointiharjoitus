@@ -6,6 +6,13 @@ public class App {
        String arvaus = "";
 
         System.out.println("Arvaa nimi!");
-
-    }
-}
+        arvaus = in.nextLine();
+        if (arvaus.equals(oikeaNimi)){
+            System.out.println("Oikein!");
+        }
+        else {
+            System.out.println("Väärin!");
+        }
+        }
+        }
+    
