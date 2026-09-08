@@ -5,14 +5,18 @@ public class App {
        String oikeaNimi = "Olivia";
        String arvaus = "";
 
-        System.out.println("Arvaa nimi!");
-        arvaus = in.nextLine();
-        if (arvaus.equals(oikeaNimi)){
-            System.out.println("Oikein!");
+        System.out.println("Arvaa nimi peli!");
+        while (!arvaus.equalsIgnoreCase(oikeaNimi)){
+            System.out.println("Anna arvaus: ");
+            arvaus = in.nextLine();
+        
+        if (arvaus.equalsIgnoreCase(oikeaNimi)) {
+            System.out.println("Oikein! Onnittelut!");
         }
         else {
-            System.out.println("Väärin!");
+            System.out.println("Väärin! Arvaa uudelleen!");
         }
         }
         }
+    }
     
